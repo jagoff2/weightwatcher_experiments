@@ -1,0 +1,8 @@
+{
+  "baseline": {
+    "final_train_loss": 0.11147035658359528,
+    "final_val_loss": 0.10822199061512947,
+    "final_alpha": 2.624470441920886,
+    "collapse_detected": false,
+    "final_region_count": 37,
+    "region_scaling_verified": 

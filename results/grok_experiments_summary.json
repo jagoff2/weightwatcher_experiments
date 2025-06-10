@@ -1,0 +1,29 @@
+{
+  "baseline": {
+    "final_train_loss": 0.47731584310531616,
+    "final_val_loss": 0.3509512335062027,
+    "final_alpha": 1.9847139544398036,
+    "collapse_detected": true,
+    "steps_to_collapse": 3750,
+    "widened": false,
+    "alpha_recovered": false
+  },
+  "microstep": {
+    "final_train_loss": 0.015107713639736176,
+    "final_val_loss": 0.05731069184839725,
+    "final_alpha": 1.9473550166507987,
+    "collapse_detected": true,
+    "steps_to_collapse": 4000,
+    "widened": false,
+    "alpha_recovered": false
+  },
+  "widen": {
+    "final_train_loss": 0.00801166146993637,
+    "final_val_loss": 0.028734633885324,
+    "final_alpha": 1.6351075242101862,
+    "collapse_detected": true,
+    "steps_to_collapse": 39999,
+    "widened": true,
+    "alpha_recovered": false
+  }
+}
