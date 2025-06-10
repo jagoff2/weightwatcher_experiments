@@ -34,11 +34,11 @@ Path("results").mkdir(exist_ok=True)
 class GrokConfig:
     """Configuration for grokking experiments"""
     modulus: int = 97
-    hidden_dim: int = 256
-    num_layers: int = 4
+    hidden_dim: int = 2560
+    num_layers: int = 1
     batch_size: int = 512
     lr: float = 1e-3
-    max_steps: int = 50000
+    max_steps: int = 1000000
     alpha_interval: int = 250
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
     use_8bit: bool = False
@@ -549,9 +549,9 @@ def main():
     """Run all grokking experiments"""
     # Define experiment configurations
     experiments = [
-        {"experiment_type": "baseline", "lr": 1e-3, "max_steps": 30000},
-        {"experiment_type": "microstep", "lr": 1e-3, "max_steps": 50000},
-        {"experiment_type": "widen", "lr": 1e-3, "max_steps": 40000}
+        {"experiment_type": "baseline", "lr": 1e-3, "max_steps": 160000},
+        {"experiment_type": "microstep", "lr": 1e-3, "max_steps": 160000},
+        {"experiment_type": "widen", "lr": 1e-3, "max_steps": 160000}
     ]
     
     results_summary = {}
